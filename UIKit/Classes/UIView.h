@@ -184,4 +184,8 @@ typedef NS_OPTIONS(NSUInteger, UIViewAnimationOptions) {
 @property (nonatomic, getter=isMultipleTouchEnabled) BOOL multipleTouchEnabled;	// state is maintained, but it has no effect
 @property (nonatomic, getter=isExclusiveTouch) BOOL exclusiveTouch; // state is maintained, but it has no effect
 @property (nonatomic, copy) NSArray *gestureRecognizers;
+
+// temporary solution
+- (void)displayLayer:(CALayer *)theLayer;
+
 @end

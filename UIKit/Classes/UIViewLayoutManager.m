@@ -49,7 +49,8 @@ static UIViewLayoutManager *theLayoutManager = nil;
 
 - (void)layoutSublayersOfLayer:(CALayer *)theLayer
 {
-    [[theLayer delegate] _layoutSubviews];
+    // FIXME: just to avoid errors
+    // [[theLayer delegate] _layoutSubviews];
 }
 
 @end
